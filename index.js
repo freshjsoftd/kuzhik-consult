@@ -1,14 +1,23 @@
 let user = {
-	fullName: 'st',
+	fullName: 'Jhon',
 	age: 20,
 	isMarried: true,
+	go: function(){
+		console.log(`${this.fullName} is running`)
+	}
 };
 
-const array = [1, 2];
+
+user.go()
+const array = [1, 2, 3, 5];
+
+console.log(array[3])
+
+/* 
 
 function sum(a, b) {
 	return a + b;
-}
+} */
 // console.log(user);
 /* console.log(typeof user.age)
 console.log(typeof user.fullName);
@@ -58,7 +67,7 @@ switch (key) {
 // key === 'string' ? console.log('It is a string') : console.log('It is not a string');
 
 // Loop
-let i = 1;
+// let i = 1;
 /* while(count < 10){
 	console.log('Count = ', count)
 	count++;
@@ -77,36 +86,4 @@ let i = 1;
 	if(i === 7) break;
 } */
 
-// Finction
 
-/* let a = 30;
-let b = 20;
-
-let c = a + b;
-
-// console.log(c)
-
-c = summ(10, 5)
-
-function summ(a, b) {
-	return a + b;
-	// console.log()
-}
-
-
-
-console.log(c)
-
-const add = function (a, b) {
-	return a + b;
-};
-let d = add(20, 40)
-
-console.log(d); */
-SimpleNumbers:
-for(let i = 2; i <= 100; i++){
-	for(let j = 2; j < i; j++){
-		if(i % j === 0) continue SimpleNumbers;
-	}
-	console.log(i)
-}
