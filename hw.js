@@ -8,7 +8,7 @@
 
 // Father 2-fold than son
 
-const age2Fold = (sonAge, fatherAge) => {
+/* const age2Fold = (sonAge, fatherAge) => {
 	let count = 0;
 	if (fatherAge - sonAge <= 15 || fatherAge < 0) {
 		return 'You entered wrong info';
@@ -30,6 +30,20 @@ const age2Fold = (sonAge, fatherAge) => {
 		count--;
 	}
   return count;
-};
+}; 
 
-console.log(age2Fold(25, 48));
+console.log(age2Fold(25, 48));*/
+
+// Palindrom
+
+const checkPalindrom = (str) => {
+	const sep = ''
+	const strWithoutGap = str.toLowerCase().replace(/ /g, sep);
+	const reverseStr = strWithoutGap.split(sep).reverse().join(sep);
+	// console.log(strWithoutGap);
+	// console.log(reverseStr);
+	return reverseStr === strWithoutGap;
+}
+
+console.log(checkPalindrom('Аргентина манит негра'));
+console.log(checkPalindrom('Казак'));
