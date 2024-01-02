@@ -70,7 +70,7 @@ function callBack(cb) {
 
 console.log(callBack(func)); */
 
-/* function Counter() {
+function Counter() {
   let count = 0;
 
   this.up = function() {
@@ -85,7 +85,7 @@ let counter = new Counter();
 
 console.log(counter.up());
 console.log(counter.up());
-console.log(counter.down()); */
+console.log(counter.down());
 
 
 /*alert( counter.up() );
